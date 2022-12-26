@@ -16,5 +16,6 @@ secondPart.map((e) => {
 })
 const equationElement = firstPartArr.concat(secondPartArr);
 
-console.log('equation Elements', equationElement);
+equationElement.sort((a, b) => (a.puissance > b.puissance) ? 1 : (a.puissance <= b.puissance) ? -1 : 0);
+
 
