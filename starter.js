@@ -1,4 +1,4 @@
-const { exit } = require("process");
+// const { exit } = require("process");
 
 const firstPart = process.argv[2].split("=")[0].replace(/[-]/g, '+-').split(/[+]/).filter((e) => e.trim().length > 0);
 const secondPart = process.argv[2].split('=')[1].replace(/[-]/g, '+-').split(/[+]/).filter((e) => e.trim().length > 0);
